@@ -43,16 +43,9 @@ public class SymptomsCounter {
 
                 results.replace(str,results.get(str)+1);
             }
-
-
         }
-
-
-
     return results;
     }
-
-
 }
 
 

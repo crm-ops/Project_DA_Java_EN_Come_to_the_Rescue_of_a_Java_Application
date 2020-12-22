@@ -42,22 +42,12 @@ public class AnalyticsCounter {
 		ReadSymptomDataFromFile filereader = new ReadSymptomDataFromFile(path);
 		inputSymptoms.addAll(filereader.GetSymptoms());
 
-
 		// take the list and pass it to a map class method for count
 		SymptomsCounter symptomcounter = new SymptomsCounter(inputSymptoms);
 		symptomsreport = symptomcounter.getSymptomsCount();
 
-
-
-
-
 		// take the map and write content to file
-
 		SymptomsFileOutput output = new SymptomsFileOutput(symptomsreport);
-
 		output.generateFileReport();
-
-		
-
 	}
 }
